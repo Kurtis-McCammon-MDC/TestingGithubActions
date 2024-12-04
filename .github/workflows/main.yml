@@ -54,7 +54,7 @@ jobs:
       environment:
         name: Production
         url: https://wriateabout.net
-      if: github.event.inputs.enironment == 'production'
+      if: github.event.inputs.enironment == 'Production'
       steps:
         - run: |
             echo "Deploying . . ."
