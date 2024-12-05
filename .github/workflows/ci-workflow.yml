@@ -1,12 +1,7 @@
 name: 07-1. CI Workflow
 
 # Trigger CI for every PR event, when PR has target branch = main
-on:
-  push:
-    branches: [main]
-    paths-ignore: .github/*
-  pull_request:
-    branches: [main]
+on: [workflow_call]
 
 jobs:
   # The first job lints the code base
