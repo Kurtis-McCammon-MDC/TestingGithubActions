@@ -6,12 +6,12 @@ inputs:
       required: true
       default: 'World'
       type: string
-  outupts:
-      time:
-        description: 'the time we said hello'
+outupts:
+    time:
+      description: 'the time we said hello'
 
-  runs:
-    using: 'docker'
-    image: 'Dockerfile'
-    args:
-      - ${{ inputs.who-to-greet }}
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.who-to-greet }}
