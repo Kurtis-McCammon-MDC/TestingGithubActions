@@ -4,6 +4,7 @@ name: 07-1. CI Workflow
 on:
   push:
     branches: [main]
+    paths-ignore: .github/*
   pull_request:
     branches: [main]
 
